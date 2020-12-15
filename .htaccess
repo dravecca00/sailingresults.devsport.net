@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTPS} off
+
+RewriteRule ^sailor/([0-9]+)-(.*) sailor.php?id=$1 [L]
+
+RewriteRule ^event/([0-9]+)-(.*) event.php?id=$1 [L]
+
+RewriteRule ^regatta/([0-9]+)-(.*) regatta.php?id=$1 [L]
